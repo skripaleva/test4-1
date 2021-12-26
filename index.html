@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="images/favicon.svg">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="container flex">
+    <div class="header__burger"></div>
+    <div class="header__logo"><img src="images/logo.svg" alt="Logo"></div>
+    <nav class="header__nav">
+      <ul class="list-reset flex">
+        <li class="header__nav-link"><a href="#about">О&nbsp;нас</a></li>
+        <li class="header__nav-link"><a href="#">Проекты</a></li>
+        <li class="header__nav-link"><a href="#">Этапы</a></li>
+        <li class="header__nav-link"><a href="#">Отзывы</a></li>
+        <li class="header__nav-link"><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__search">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
+        <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <main class="main">
+    <section class="slider section__offset">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide swiper-slide1"></div>
+          <div class="swiper-slide swiper-slide2"></div>
+          <div class="swiper-slide swiper-slide3"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="slider__text-block flex">
+        <h1 class="slider__title">Проектные решения любой сложности</h1>
+        <p class="slider__desc">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов</p>
+        <button class="btn btn-reset slider__btn flex">Заказать расчёт</button>
+      </div>
+    </section>
+    <section class="about section-offset" id="about">
+      <div class="about__top">
+        <h2 class="about__title section__title">О&nbsp;нас</h2>
+        <p class="about__desc section__desc">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+      </div>
+      <div class="about__bottom flex">
+        <div class="about__img">
+          <div class="about__image-container">
+            <img src="images/about.jpg" alt="illustration: worker">
+          </div>
+          <div class="about__add flex">
+            <div class="about__add-text">Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке и&nbsp;реализации новых принципов.</div>
+            <div class="about__add-btn">Подробнее</div>
+          </div>
+        </div>
+
+        <div class="about__cards">
+          <div class="about__card">
+            <h3 class="card__title section__subtitle">Консультация с&nbsp;широким активом</h3>
+            <p class="card__desc section__desc">А&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;- безусловно открывает новые горизонты для как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений.</p>
+          </div>
+          <div class="about__card">
+            <h3 class="card__title section__subtitle">В&nbsp;своём стремлении повысить</h3>
+            <p class="card__desc section__desc">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>
+</html>
